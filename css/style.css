@@ -2533,9 +2533,10 @@ h5,
 }
 
 .site-blocks-cover {
-  background: url(/images/taxi1.jpg);
+  background: url(../images/taxi1.jpg);
   background-size: cover;
 }
+
 
 .logo img {
   width: 129px;
