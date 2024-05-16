@@ -33,7 +33,7 @@ body{
 
 .contact-page .section-heading {
   margin-bottom: 40px;
-  margin-right: 280px;
+  /* margin-right: 280px; */
 }
 
 .contact-page p {
@@ -46,7 +46,8 @@ body{
   padding: 35px 30px;
   background-color: #fff;
   display: inline-block;
-  min-width: 360px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .contact-page .phone {
@@ -72,7 +73,7 @@ body{
 }
 
 .contact-page #contact-form {
-  margin-left: 30px;
+  /* margin-left: 30px; */
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   padding: 35px 30px;
@@ -206,7 +207,18 @@ a{
 }
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    color: #8a1f1f;}
+    color: #8a1f1f;
+  }
+
+
+    @media only screen and (max-width: 600px) {
+      .page-heading h3 {
+  font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+}
+    }
 /*  */
 </style>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
