@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
+    <link rel="shortcut icon" href="images/Trip_Mate_removebg.png">
+
 
     <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,900" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   
     <link rel="stylesheet" href="fonts/icomoon/style.css">
@@ -33,7 +36,7 @@ body{
 
 .contact-page .section-heading {
   margin-bottom: 40px;
-  /* margin-right: 280px; */
+  margin-right: 280px;
 }
 
 .contact-page p {
@@ -46,8 +49,7 @@ body{
   padding: 35px 30px;
   background-color: #fff;
   display: inline-block;
-  width: 100%;
-  margin-bottom: 10px;
+  min-width: 360px;
 }
 
 .contact-page .phone {
@@ -73,7 +75,7 @@ body{
 }
 
 .contact-page #contact-form {
-  /* margin-left: 30px; */
+  margin-left: 30px;
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   padding: 35px 30px;
@@ -110,7 +112,7 @@ body{
 }
 
 .contact-page #contact-form button {
-  background-color: #1e1e1e;
+  background-color: #8a1f1f;
   height: 44px;
   border-radius: 22px;
   padding: 0px 20px;
@@ -122,7 +124,7 @@ body{
 }
 
 .contact-page #contact-form button:hover {
-  background-color: #fcb900;
+  background-color: #000;
 }
 .section-heading h2{
   line-height: 40px;
@@ -207,18 +209,29 @@ a{
 }
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    color: #8a1f1f;
-  }
+    color: #8a1f1f;}
+
+/* watsapp */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:15px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
 
 
-    @media only screen and (max-width: 600px) {
-      .page-heading h3 {
-        font-size: 37px;
-        font-weight: 900;
-        text-transform: uppercase;
-        color: #fff;
-    }
-    }
 /*  */
 </style>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -228,6 +241,7 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
+            <span class="breadcrumb"><a href="/">Home</a>  /  Contact Us</span>
             <h3>Contact Us</h3>
           </div>
         </div>
@@ -242,19 +256,19 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
             <div class="section-heading">
               <h2>Get In Touch With Us</h2>
             </div>
-            <p>Welcome to <span class="text-danger">Tripmakes</span>, Please contact us with any questions you may have about our services,
+            <p>Welcome to <span class="text-danger">Tripmates</span>, Please contact us with any questions you may have about our services,
                 Our committed staff is here to deliver outstanding service and guarantee that your travel requirements are handled with care and professionalism. Make reservations and discuss your needs by getting in touch with us right now.</p>
             <div class="row">
               <div class="col-lg-12">
                 <div class="item phone">
-                  <img src="images/telephone-fill (2).svg" alt="" style="max-width: 49px;">
-                  <h6>+971 58 554 0051 <br><br>+971 55 580 1525 <br><span>Phone Number</span></h6>
+                  <img src="images/telephone.png" alt="">
+                  <h6> +971 58 554 0051 <br><br>+971 55 580 1525 <br><span>Phone Number</span></h6>
                 </div>
               </div>
               <div class="col-lg-12">
                 <div class="item email">
-                  <img src="images/envelope-at-fill.svg" alt="" style="max-width: 44px;">
-                  <h6>Info@alzayedrentals.com<br><span>Business Email</span></h6>
+                  <img src="images/email.png" alt="" style="width: 35px;">
+                  <h6>Info@tripmatesuae.com<br><span>Business Email</span></h6>
                 </div>
               </div>
             </div>
@@ -303,6 +317,10 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 
     <!-- Footer -->
     <footer class="site-footer dot-foot">
+      <a href="https://api.whatsapp.com/send?phone=971555813440&text=Hi Tripmates, I'm in need of transportation services and came across your contact. Could you please provide information on the availability of cabs or transport services for [date/time] from [pickup location] to [destination]? Thank you!." class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+      </a>
+
       <div class="container">
         <div class="row">
           <div class="col-md-9">
