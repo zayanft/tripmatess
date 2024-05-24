@@ -4,14 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="">
-  <link rel="shortcut icon" href="images/Trip_Mate_removebg.png">
+  <link rel="shortcut icon" href="Trip_Mate_removebg.png">
 
-  <meta name="description" content=""/>
-  <meta name="keywords" content=""/>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
   <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
+  <!-- owl link -->
   
+  <!-- owl link End-->
   <link rel="stylesheet" href="fonts/icomoon/style.css">
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -28,8 +32,34 @@
 
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Include Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   <title>TripMates</title>
 </head>
+<style>
+   .owl-carousel .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            overflow: hidden;
+            /* background: transparent !important; */
+            padding: 10px;
+            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+            width: 130px !important;
+            height: 90px;
+            margin: 50px 0;
+        }
+        .owl-carousel .item img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            /* object-fit: cover; */
+        }
+</style>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
   <div class="site-wrap">
@@ -42,6 +72,7 @@
       <div class="site-mobile-menu-body"></div>
     </div>
     
+
     <div class="top-bar py-2" id="home-section">
       <div class="container">
         <div class="row">
@@ -120,23 +151,24 @@
       </div>  
       <!-- </div> -->
 
-      <section class="site-section dot-section" id="demo">
+
+      <section class="dot-section owl-carousel owl-theme" id="demo">
         <div class="container">
           <div class="row">
-            <div class="col" data-aos="fade-in" data-aos-delay="0">
-              <img src="images/mercedes-benz-svgrepo-com.svg" alt="Image" class="img-fluid">
+            <div class="col item" data-aos="fade-in" data-aos-delay="0">
+              <img src="images/mercedes-benz-svgrepo-com.svg" alt="Logo1" class="">
             </div>
-            <div class="col" data-aos="fade-in" data-aos-delay="100">
-              <img src="images/BMW.svg" alt="Image" class="img-fluid">
+            <div class="col item" data-aos="fade-in" data-aos-delay="100">
+              <img src="images/BMW.svg" alt="Logo2" class="">
             </div>
-            <div class="col" data-aos="fade-in" data-aos-delay="200">
-              <img src="images/landrover-svgrepo-com.svg" alt="Image" class="img-fluid">
+            <div class="col item" data-aos="fade-in" data-aos-delay="200">
+              <img src="images/landrover-svgrepo-com.svg" alt="Logo3" class="">
             </div>
-            <div class="col" data-aos="fade-in" data-aos-delay="300">
-              <img src="images/volvo-svgrepo-com.svg" alt="Image" class="img-fluid">
+            <div class="col item" data-aos="fade-in" data-aos-delay="300">
+              <img src="images/volvo-svgrepo-com.svg" alt="Logo4" class="">
             </div>
-            <div class="col" data-aos="fade-in" data-aos-delay="400">
-              <img src="images/volkswagen-svgrepo-com.svg" alt="Image" class="img-fluid">
+            <div class="col item" data-aos="fade-in" data-aos-delay="400">
+              <img src="images/volkswagen-svgrepo-com.svg" alt="Logo5" class="">
             </div>
           </div>
         </div>
@@ -416,6 +448,9 @@
 
       <footer class="site-footer dot-foot">
         <div class="container">
+          <a href="https://api.whatsapp.com/send?phone=971555813440&text=Hi Tripmates, I'm in need of transportation services and came across your contact. Could you please provide information on the availability of cabs or transport services for [date/time] from [pickup location] to [destination]? Thank you!." class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+          </a>
           <div class="row">
             <div class="col-md-9">
               <div class="row">
@@ -473,7 +508,7 @@
 
     </div> <!-- .site-wrap -->
 
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/popper.min.js"></script>
@@ -496,6 +531,7 @@
     <script src="js/jquery.sticky.js"></script>
 
     <script src="js/typed.js"></script>
+
     <script>
       var typed = new Typed('.typed-words', {
         strings: ["RideSmart"," SwiftRide"," UrbanCabs"],
@@ -507,6 +543,27 @@
         showCursor: true
       });
     </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".owl-carousel").owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    nav: true,
+                    responsive: {
+                        0: {
+                            items: 2
+                        },
+                        600: {
+                            items: 1
+                        },
+                        1000: {
+                            items: 2
+                        }
+                    }
+                });
+            });
+        </script>
 
     <script src="js/main.js"></script>
 
