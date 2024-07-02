@@ -20,9 +20,10 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+
+  <link rel="stylesheet" href="css/owl.carousel.css"> 
 
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 
@@ -34,31 +35,26 @@
   <link rel="stylesheet" href="css/style.css">
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Include Owl Carousel CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  
   <title>TripMates</title>
 </head>
 <style>
-   .owl-carousel .item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            overflow: hidden;
-            /* background: transparent !important; */
-            padding: 10px;
-            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-            width: 130px !important;
-            height: 90px;
-            margin: 50px 0;
-        }
-        .owl-carousel .item img {
-            border-radius: 50%;
-            width: 100%;
-            height: 100%;
-            /* object-fit: cover; */
-        }
+  .logo-carousel-section {
+  /* background-color: transparent; */
+  padding: 50px 0;
+}
+.logo-carousel-section .single-logo-item img{
+  width: 120px;
+}
+@media only screen and (max-width: 500px) {
+  .logo-carousel-section .logo-carousel-inner
+
+  {
+    padding-left: 100px;
+  }
+}
+
 </style>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
@@ -151,52 +147,52 @@
       </div>  
       <!-- </div> -->
 
+      		<!-- logo carousel -->
+	<div class="logo-carousel-section dot-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="logo-carousel-inner">
 
-      <section class="dot-section owl-carousel owl-theme" id="demo">
-        <div class="container">
-          <div class="row">
-            <div class="col item" data-aos="fade-in" data-aos-delay="0">
-              <img src="images/mercedes-benz-svgrepo-com.svg" alt="Logo1" class="">
-            </div>
-            <div class="col item" data-aos="fade-in" data-aos-delay="100">
-              <img src="images/BMW.svg" alt="Logo2" class="">
-            </div>
-            <div class="col item" data-aos="fade-in" data-aos-delay="200">
-              <img src="images/landrover-svgrepo-com.svg" alt="Logo3" class="">
-            </div>
-            <div class="col item" data-aos="fade-in" data-aos-delay="300">
-              <img src="images/volvo-svgrepo-com.svg" alt="Logo4" class="">
-            </div>
-            <div class="col item" data-aos="fade-in" data-aos-delay="400">
-              <img src="images/volkswagen-svgrepo-com.svg" alt="Logo5" class="">
-            </div>
-            <div class="col item" data-aos="fade-in" data-aos-delay="400">
-              <img src="images/chevrolet-svgrepo-com.svg" alt="Logo5" class="">
-            </div>
-            <div class="col item" data-aos="fade-in" data-aos-delay="400">
-              <img src="images/ford-svgrepo-com.svg" alt="Logo6" class="">
-            </div>
-            <div class="col item" data-aos="fade-in" data-aos-delay="400">
-              <img src="images/nissan-svgrepo-com (1).svg" alt="Logo7" class="">
-            </div>
-            <div class="col item" data-aos="fade-in" data-aos-delay="400">
-              <img src="images/jeep-svgrepo-com.svg" alt="Logo8" class="">
-            </div>
-            <div class="col item" data-aos="fade-in" data-aos-delay="400">
-              <img src="images/dodge-svgrepo-com.svg" alt="Logo9" class="">
-            </div>
-            <div class="col item" data-aos="fade-in" data-aos-delay="400">
-              <img src="images/jaguar-svgrepo-com.svg" alt="Logo9" class="">
-            </div>
-            <div class="col item" data-aos="fade-in" data-aos-delay="400">
-              <img src="images/gmc-svgrepo-com.svg" alt="Logo9" class="">
-            </div>
-            <div class="col item" data-aos="fade-in" data-aos-delay="400">
-              <img src="images/lexus-svgrepo-com.svg" alt="Logo9" class="">
-            </div>
-          </div>
-        </div>
-      </section>
+						<div class="single-logo-item">
+							<img src="images/lexus-svgrepo-com.svg" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="images/jaguar-svgrepo-com.svg" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="images/gmc-svgrepo-com.svg" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="images/dodge-svgrepo-com.svg" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="images/volvo-svgrepo-com.svg" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="images/chevrolet-svgrepo-com.svg" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="images/ford-svgrepo-com.svg" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="images/volkswagen-svgrepo-com.svg" alt="">
+						</div>
+						<div class="single-logo-item">
+              <img src="images/jeep-svgrepo-com.svg" alt="">
+
+						</div>
+						<div class="single-logo-item">
+							<img src="images/BMW.svg" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="images/landrover-svgrepo-com.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
@@ -204,7 +200,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-lg-4 mb-lg-0 mb-4">
-              <div class="box-with-humber bg-white p-5">
+              <div class="box-with-humber p-5">
                 <span class="icon icon-format_paint mr-2 text-primary h3 mb-3 d-block"></span>
                 <h2 class="text-primary">Tailored Transportation</h2>
                 <p class="mb-3">We specializes in moving ship crew and passengers. They offer efficient and convenient transportation services, ensuring crew get to and from their vessels or enjoy shore leave on time.</p>
@@ -216,7 +212,7 @@
             </div>
 
             <div class="col-md-6 col-lg-4 mb-lg-0 mb-4" data-jarallax-element="-50">
-              <div class="box-with-humber bg-white p-5">
+              <div class="box-with-humber p-5">
                 <span class="icon icon-palette mr-2 text-primary h3 mb-3 d-block"></span>
 
                 <h2 class="text-primary">Flexible Fleet</h2>
@@ -229,7 +225,7 @@
             </div>
 
             <div class="col-md-6 col-lg-4 mb-lg-0 mb-4" data-jarallax-element="20">
-              <div class="box-with-humber bg-white p-5">
+              <div class="box-with-humber p-5">
                 <span class="icon icon-envelope mr-2 text-primary h3 mb-3 d-block"></span>
 
                 <h2 class="text-primary">Dependable Support</h2>
@@ -541,10 +537,13 @@
 
     <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
     <script src="js/owl.carousel.min.js"></script>
+    
     <script src="js/jquery.stellar.min.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/bootstrap-datepicker.min.js"></script>
@@ -574,29 +573,10 @@
         showCursor: true
       });
     </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $(".owl-carousel").owlCarousel({
-                    loop: true,
-                    margin: 10,
-                    nav: true,
-                    responsive: {
-                        0: {
-                            items: 2
-                        },
-                        600: {
-                            items: 1
-                        },
-                        1000: {
-                            items: 1
-                        }
-                    }
-                });
-            });
-        </script>
+
 
     <script src="js/main.js"></script>
+    <script src="js/main1.js"></script>
 
     
 
