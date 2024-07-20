@@ -230,6 +230,7 @@ h5,
 
 .site-footer p {
   color: #737373;
+   font-weight:500px;
 }
 
 .site-footer ul li {
@@ -513,7 +514,7 @@ h5,
 
 .site-navbar .site-navigation .site-menu>li>a.active:after {
   visibility: visible;
-  opacity: 1;
+  opacity: 0;
 }
 
 .site-navbar .site-navigation .site-menu>li>a:hover {
@@ -2810,4 +2811,10 @@ h5,
   background: #fff;
   transition: 0.8s;
   
+}
+.bug-img{
+  height: 500px !important;
+}
+.li-blod li{
+  font-weight: 500;
 }
