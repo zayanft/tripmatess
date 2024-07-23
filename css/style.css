@@ -856,9 +856,10 @@ h5,
 }
 
 .sticky-wrapper {
-  position: absolute;
+/*   position: absolute; */
   z-index: 100;
   width: 100%;
+  margin-bottom: -65px;
 }
 
 .sticky-wrapper+.site-blocks-cover {
