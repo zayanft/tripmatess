@@ -2753,9 +2753,9 @@ h5,
 }
 .btns{
   padding: 20px 10px;
-  background: #8a1f1f;
-  border-radius: 10px;
+  border-radius: 4px;
   color: #fff !important;
+  background: linear-gradient(to right,#8a1f1f,#130b83);
 }
 
 /* Whatsapp Integration */
