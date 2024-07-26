@@ -2899,4 +2899,8 @@ h5,
   .section-title h2{
     font-size: 23px;
   }
+  .parelex h1{
+    padding-top: 13vh;
+    font-size: 15px;
+  }
 }
