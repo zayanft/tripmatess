@@ -27,8 +27,16 @@
 Contact Page Style
 --------------------------------------------- 
 */
+
+@media (max-width: 768px) {
+
+}
 body{
   background: #eeeeee;
+  overflow-x: hidden !important;
+}
+.container{
+  overflow-x: hidden !important;
 }
 .contact-page #map {
   margin-top: 100px;
@@ -75,11 +83,13 @@ body{
 }
 
 .contact-page #contact-form {
-  margin-left: 30px;
+  margin-left: 6px;
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   padding: 35px 30px;
   background-color: #fff;
+  width: 350px;
+  margin-top: 50px;
 }
 
 .contact-page #contact-form label {
@@ -237,11 +247,12 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
     <!--  -->
-    <div class="page-heading header-text contact-page-heading">
+    <div class="page-heading header-text contact-page-heading overflow-hidden">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <span class="breadcrumb"><a href="/">Home</a>  /  Contact Us</span>
+            <!-- <span class="breadcrumb"><a href="/">Home</a>  /  Contact Us</span> -->
+            <span class="breadcrumb"><a href="/">Home</a></span>
             <h3>Contact Us</h3>
           </div>
         </div>
@@ -249,7 +260,7 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
     </div>
     <!--  -->
 
-    <div class="contact-page section">
+    <div class="contact-page section overflow-hidden">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -274,7 +285,6 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
             </div>
           </div>
           <div class="col-lg-6">
-  
             <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
               <input type="hidden" name="access_key" value="2f6115aa-b240-4542-bd04-c7969a363a28">
               
@@ -316,7 +326,7 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
     </div>
 
     <!-- Footer -->
-    <footer class="site-footer dot-foot">
+    <footer class="site-footer dot-foot overflow-hidden">
       <a href="https://api.whatsapp.com/send?phone=971555813440&text=Hi Tripmates, I'm in need of transportation services and came across your contact. Could you please provide information on the availability of cabs or transport services for [date/time] from [pickup location] to [destination]? Thank you!." class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
       </a>
