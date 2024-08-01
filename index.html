@@ -91,7 +91,7 @@
                   <a href="#about-section" class="nav-link">About</a>
                 </li>
                 <!-- <li><a href="#blog-section" class="nav-link">Blog</a></li> -->
-                <li><a href="contact.html" class="nav-link btns">Contact</a></li>
+                <li><a href="contact.html" id="contactBtn" class="nav-link btns">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -615,6 +615,20 @@
         loop: true,
         showCursor: true
       });
+    document.addEventListener('DOMContentLoaded', function() {
+    const link = document.getElementById('contactBtn');
+
+    link.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+        const targetUrl = this.getAttribute('href');
+
+        // Debugging: Log the URL to the console
+        console.log('Redirecting to:', targetUrl);
+
+        // Redirect to the target URL
+        window.location.href = targetUrl;
+    });
+  });
     </script>
 
 
