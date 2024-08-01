@@ -665,9 +665,9 @@ h5,
   position: fixed;
   right: 0;
   z-index: 2000;
-  padding-top: 20px;
+  padding-top: 30px;
   background: #fff;
-  height: calc(68vh);
+  height: calc(34vh);
   -webkit-transform: translateX(110%);
   -ms-transform: translateX(110%);
   transform: translateX(110%);
